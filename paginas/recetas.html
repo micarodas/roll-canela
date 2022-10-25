@@ -6,90 +6,116 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Roll&Canela</title>
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
         <link rel="stylesheet" href="../css/estilo.css">
         <link rel="shortcut icon" href="../multimedia/DALL·E 2022-10-18 18.01.50 - a lot of cinnamon rolls.png" type="image/x-icon">
     </head>
-    <body>
-        <header class="header">  
-            <nav class="menu">
-                <div class="titulo">
-                    <h1 class="contenido0">
-                    Roll&Canela
-                    </h1>
-                </div>
-                <div>
-                    <ul class="listas">
-                        <li><a href="../index.html"> INICIO </a></li>
-                        <li><a href="#"> RECETAS</a></li>
-                        <li><a href="../paginas/recomendaciones.html"> RECOMENDACIONES </a></li>
-                        <li><a href="../paginas/playlist.html"> PLAYLIST </a></li>
-                        <li><a href="../paginas/contacto.html"> CONTACTO </a></li>
-                        <li><a href="../paginas/acercade.html"> ACERCA DE </a></li>
-                    </ul>
-                </div>
-                <a href="#final" class="final">Ir al final del sitio</a>
-            </nav>
+    <body class="container-fluid">
+        <header class="header row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-dark bg-dark fixed-top">
+                    <div class="container-fluid">
+                    <a class="navbar-brand">ROLL&CANELA</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">ROLL&CANELA</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">RECETAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="recomendaciones.html">RECOMENDACIONES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="playlist.html">PLAYLIST</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="acercade.html">ACERCA DE</a>
+                            </li>
+
+
+
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+                    </form>
+                </nav>
+            </div>
         </header>
 
-        <section>
-            <div>
-                <h1>RECETAS DE ENSUEÑO</h1>
-            </div>
-            <div>
-                <h2>Rollos de canela, naranja y miel – Cinnamon orange honey buns</h2>
-            </div>
-            <div>            
-                <img src="https://bsstatic2.mrjack.es/wp-content/uploads/flickr/b2c/9b6/8434337031_00c13d859c.jpg" alt="receta de cinnamon rolls">
-            </div>
-            <div>
-                <h3>INGREDIENTES</h3>
-            </div>
-            <div>
-                <ul class="recetario">
-                    <li>7,5 gr de levadura seca activa</li>
-                    <li>240 ml de leche entera a 53ºC</li>
-                    <li>30 gr de miel </li>
-                    <li>30 gr de azúcar moscabado</li>
-                    <li>30 gr de azúcar granulado</li>
-                    <li>2 cucharadas (30 ml) de zumo de naranja (2 Tbsp)</li>
-                    <li>1 cucharada (15 ml) de zumo de mandarina (1 Tbsp)</li>
-                    <li>ralladura de 1/2 naranja </li>
-                    <li>ralladura de 1 mandarina</li>
-                    <li>2 huevos a temperatura ambiente. </li>
-                    <li>630 gr de  harina de fuerza</li>
-                    <li>120 gr de mantequilla sin sal derretida </li>
-                    <li>1 cucharadita de sal (1 Tsp)</li>
-                </ul>
-            </div>
-        </section>
 
-        <footer class="colorFondo">
-            <div class="copyright">
-                &copy; ROLL&CANELA 2022
-            </div>
-            <div>
-                <a href="https://www.instagram.com/" target="_blank">
-                    Instagram |
-                </a>
-                <a href="https://twitter.com/home" target="_blank"> 
-                    Twitter |
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                    Facebook |
-                </a>
-            </div>
-            <div class="enlaces">
-                <a href="#">
-                    TERMS & CONDITIONS |
-                </a>
-                <a href="#">
-                    PRIVACY |
-                </a>
-                <a href="#">
-                    ENVIAR FEEDBACK |   
-                </a>
-            </div>
+            <section class="recipes row">
+                <h1>RECETAS DE ENSUEÑO</h1>
+                <h2>Rollos de canela, naranja y miel – Cinnamon orange honey buns</h2>
+                
+                <div>            
+                    <img src="https://bsstatic2.mrjack.es/wp-content/uploads/flickr/b2c/9b6/8434337031_00c13d859c.jpg" alt="receta de cinnamon rolls">
+                </div>
+                
+                <h3>INGREDIENTES</h3>
+                    <ul class="recipe">
+                        <li>7,5 gr de levadura seca activa</li>
+                        <li>240 ml de leche entera a 53ºC</li>
+                        <li>30 gr de miel </li>
+                        <li>30 gr de azúcar moscabado</li>
+                        <li>30 gr de azúcar granulado</li>
+                        <li>2 cucharadas (30 ml) de zumo de naranja (2 Tbsp)</li>
+                        <li>1 cucharada (15 ml) de zumo de mandarina (1 Tbsp)</li>
+                        <li>ralladura de 1/2 naranja </li>
+                        <li>ralladura de 1 mandarina</li>
+                        <li>2 huevos a temperatura ambiente. </li>
+                        <li>630 gr de  harina de fuerza</li>
+                        <li>120 gr de mantequilla sin sal derretida </li>
+                        <li>1 cucharadita de sal (1 Tsp)</li>
+                    </ul>
+            </section>
+
+        <footer class="footer-design row">
+            <div class="col-md-12">
+                <div class="copyright">
+                    &copy; ROLL&CANELA 2022
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        Instagram |
+                    </a>
+                    <a href="https://twitter.com/home" target="_blank"> 
+                        Twitter |
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        Facebook |
+                    </a>
+                </div>
+                <div class="enlaces">
+                    <a href="#">
+                        TERMS & CONDITIONS |
+                    </a>
+                    <a href="#">
+                        PRIVACY |
+                    </a>
+                    <a href="#">
+                        ENVIAR FEEDBACK |   
+                    </a>
+                </div>
+            </div>    
         </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    
     </body>
 </html>             
 
