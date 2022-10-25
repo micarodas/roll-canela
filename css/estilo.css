@@ -137,56 +137,52 @@ body{
     font-style: italic;
 }
 
-.linkSpot1 {
+.spotify {
     margin: 20px; 
     padding: 20px;
-    border: double 5px black;
 }
 
-.linkSpot2 {
+.spotify {
     margin: 20px; 
     padding: 20px;
-    border: double 5px black;
 }
 
-.linkSpot3 {
+.spotify {
     margin: 20px; 
     padding: 20px;
-    border: double 5px black;
 }
 
-.linkSpot4 {
+.spotify {
     margin: 20px; 
     padding: 20px;
-    border: double 5px black;
 }
 
-.linkSpot5 {
+.spotify {
     margin: 20px; 
     padding: 20px;
-    border: double 5px black;
 }
 
-.linkSpot6 {
+.spotify {
     margin: 20px; 
     padding: 20px;
-    border: double 5px black;
 }
 
-.linkSpot7 {
+.spotify {
     margin: 20px; 
     padding: 20px;
-    border: double 5px black;
 }
 
-.linksSpot {
-    display: grid;
-    background-color: rgb(238, 231, 224);
-    grid-template-columns: 1.5fr 1.5fr 1.5fr ;
+.spotify {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
 }
 
-.linksSpot div{
-    background-color: black;
+.spotify div{
+    background-color: rgb(190, 182, 182);
 }
 
 
