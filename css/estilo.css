@@ -1,0 +1,216 @@
+html {
+    font-size: 62,5% ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(234, 242, 245);
+}
+
+
+.header {
+    background-image: url(https://food-images.files.bbci.co.uk/food/recipes/cinnamon_rolls_38056_16x9.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding-bottom: 700px;
+}
+
+/* .header{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(27, 1fr);
+} */
+
+.navbar {
+    padding: 12px;
+}
+
+.navbar-brand{
+    font-size: 35px;
+}
+
+.navbar li a:hover {
+    color: rgb(125, 162, 219)
+}
+
+
+.subtitulo {
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 50px 70px 50px; 
+    padding: 20px 50px 70px 50px;
+}
+
+
+/*.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}*/
+
+.contenido1 h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: 50;
+    padding: 20px; 
+    margin: 30px;
+    font-family: serif;
+}
+
+.contenido1 p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 1.5;
+}
+
+
+.contenido2 h3{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: 50;
+    padding: 20px; 
+    margin: 30px;
+    font-family: serif;
+}
+
+.contenido2 p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 1.5;
+}
+
+
+.image1 {
+    width: 650px;
+    height: 450px;
+    margin: 50px;
+    padding: 20px;
+}
+
+.image2 {
+    width: 700px;
+    height: 500px;
+    margin: 50px;
+    padding: 20px;
+}
+
+.copyright {
+    font-weight: bold;;
+}
+
+
+.enlaces {
+    text-decoration: underline;
+}
+
+.footer-design {
+    text-align: center;
+    color: black;
+}
+
+.footer-design a{
+    color: black;
+}
+
+.table {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://i.pinimg.com/originals/fa/d9/8e/fad98e93aa014d8d8447bdf326c88f3e.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+}
+
+.recomendaciones h2{
+    font-size: 35px;
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    text-decoration: underline;
+
+}
+
+
+.recomendaciones {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.linkSpot1 {
+    margin: 20px; 
+    padding: 20px;
+    border: double 5px black;
+}
+
+.linkSpot2 {
+    margin: 20px; 
+    padding: 20px;
+    border: double 5px black;
+}
+
+.linkSpot3 {
+    margin: 20px; 
+    padding: 20px;
+    border: double 5px black;
+}
+
+.linkSpot4 {
+    margin: 20px; 
+    padding: 20px;
+    border: double 5px black;
+}
+
+.linkSpot5 {
+    margin: 20px; 
+    padding: 20px;
+    border: double 5px black;
+}
+
+.linkSpot6 {
+    margin: 20px; 
+    padding: 20px;
+    border: double 5px black;
+}
+
+.linkSpot7 {
+    margin: 20px; 
+    padding: 20px;
+    border: double 5px black;
+}
+
+.linksSpot {
+    display: grid;
+    background-color: rgb(238, 231, 224);
+    grid-template-columns: 1.5fr 1.5fr 1.5fr ;
+}
+
+.linksSpot div{
+    background-color: black;
+}
+
+
+.recetario{
+    list-style-type:circle;
+    font-size: 20px;
+    text-align: left;
+    font-style:normal;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    padding: 10px;
+}
