@@ -21,12 +21,9 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
-    padding: 400px;
+    padding-bottom: 500px;
 }
 
-.navbar {
-    padding: 12px;
-}
 
 .navbar-brand{
     font-size: 35px;
@@ -38,12 +35,11 @@ body{
 
 
 .contenido1 h2{
-    text-align: center;
+    text-align: left;
     text-decoration: underline;
     font-size: 40px;
     font-weight: 50;
-    padding: 20px; 
-    margin: 30px;
+    
     font-family: serif;
 }
 
@@ -52,16 +48,16 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     line-height: 1.5;
+    text-align: left;
 }
 
 
 .contenido2 h3{
-    text-align: center;
+    text-align: left;
     text-decoration: underline;
     font-size: 40px;
     font-weight: 50;
-    padding: 20px; 
-    margin: 30px;
+    
     font-family: serif;
 }
 
@@ -70,26 +66,23 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     line-height: 1.5;
+    text-align: left;
 }
 
 
 .image1 {
-    width: 650px;
-    height: 450px;
-    margin: 50px;
-    padding: 20px;
+    width: 600px;
+    height: 400px;
 }
 
 
 .image2 {
-    width: 700px;
-    height: 500px;
-    margin: 50px;
-    padding: 20px;
+    width: 600px;
+    height: 400px;
 }
 
 .copyright {
-    font-weight: bold;;
+    font-weight: bold;
 }
 
 
