@@ -105,7 +105,7 @@ body{
     background-image: url(https://i.pinimg.com/originals/fa/d9/8e/fad98e93aa014d8d8447bdf326c88f3e.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 20px;
+    
 }
 
 .recomendaciones h1{
@@ -130,63 +130,28 @@ body{
     font-style: italic;
 }
 
-.spotify {
-    margin: 20px; 
-    padding: 20px;
-}
 
-.spotify {
-    margin: 20px; 
-    padding: 20px;
-}
-
-.spotify {
-    margin: 20px; 
-    padding: 20px;
-}
-
-.spotify {
-    margin: 20px; 
-    padding: 20px;
-}
-
-.spotify {
-    margin: 20px; 
-    padding: 20px;
-}
-
-.spotify {
-    margin: 20px; 
-    padding: 20px;
-}
-
-.spotify {
-    margin: 20px; 
-    padding: 20px;
-}
-
-.spotify {
+/* .spotify {
     display: flex;
     flex-direction: column;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-
-}
+} */
 
 .spotify div{
     background-color: rgb(190, 182, 182);
 }
 
 
-.recipe{
-    list-style-type:circle;
+.recipe ul li{
+    list-style-type: square;
     font-size: 20px;
-    text-align: left;
+    text-align: right;
     font-style:normal;
     font-family: serif;
     line-height: 1.8;
-    padding: 10px;
+
 }
 
 .recipes h1{
@@ -228,7 +193,7 @@ body{
 }
 
 
-.subtitulo h2{
+.info h2{
     font-size: 35px;
     font-family: serif;
     font-weight: bold;
@@ -238,7 +203,7 @@ body{
 }
 
 
-.subtitulo p{
+.info p{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
