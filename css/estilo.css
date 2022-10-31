@@ -39,7 +39,6 @@ body{
     text-decoration: underline;
     font-size: 40px;
     font-weight: 50;
-    
     font-family: serif;
 }
 
@@ -57,7 +56,6 @@ body{
     text-decoration: underline;
     font-size: 40px;
     font-weight: 50;
-    
     font-family: serif;
 }
 
@@ -113,7 +111,7 @@ body{
     font-family: serif;
     font-weight: bold;
     text-align: center;
-    padding: 40px;
+    /* padding: 40px; */
     text-decoration: underline;
 }
 
@@ -126,22 +124,21 @@ body{
 .playlist {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
     font-style: italic;
+    color: rgb(50, 50, 97);
 }
 
 
-/* .spotify {
+.spotify {
     display: flex;
     flex-direction: column;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-} */
-
-.spotify div{
-    background-color: rgb(190, 182, 182);
+    justify-content: space-between;
+    padding-bottom: 30px;
 }
+
 
 
 .recipe ul li{
@@ -159,7 +156,7 @@ body{
     font-family: serif;
     font-weight: bold;
     text-align: center;
-    padding: 40px;
+    /* padding: 40px; */
     text-decoration: underline;
 }
 
@@ -169,7 +166,7 @@ body{
     font-family: serif;
     font-weight: normal;
     text-align: left;
-    padding: 40px;
+    /* padding: 40px; */
     text-decoration: underline;
 }
 
@@ -178,7 +175,7 @@ body{
     font-family: serif;
     font-weight: bold;
     text-align: center;
-    padding: 40px;
+    
     text-decoration: underline;
 }
 
@@ -198,7 +195,8 @@ body{
     font-family: serif;
     font-weight: bold;
     text-align: center;
-    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-decoration: underline;
 }
 
@@ -206,4 +204,7 @@ body{
 .info p{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(252, 252, 252);
+    margin-left: 30px;
+    margin-right: 30px;
 }
