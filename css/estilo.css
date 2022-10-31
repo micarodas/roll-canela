@@ -144,7 +144,6 @@ body{
 .recipe ul li{
     list-style-type: square;
     font-size: 20px;
-    text-align: right;
     font-style:normal;
     font-family: serif;
     line-height: 1.8;
@@ -156,7 +155,6 @@ body{
     font-family: serif;
     font-weight: bold;
     text-align: center;
-    /* padding: 40px; */
     text-decoration: underline;
 }
 
@@ -165,8 +163,7 @@ body{
     font-size: 25px;
     font-family: serif;
     font-weight: normal;
-    text-align: left;
-    /* padding: 40px; */
+    text-align: left; 
     text-decoration: underline;
 }
 
