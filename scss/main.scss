@@ -1,4 +1,20 @@
-@import "variables";
+
+$colorbg: rgb(201, 222, 230);
+
+
+@mixin font_texto {
+    color: black;
+    font-size: 20px;
+    font-family: 'roboto' sans-serif ;
+}
+
+@mixin font_titulos {
+    font-size: 30px;
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
 
 html {
     font-size: 62,5%;
@@ -46,17 +62,30 @@ body{
     font-weight: 50;
     font-family: serif;
     }
+
     p{
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
+        @include font_texto;
         line-height: 1.5;
         text-align: left;
     }
-    .image1 img{
-        width: 600px;
-        height: 400px;
+
+    .image1 {
+        
+
+        img{
+            transition-property: transform;
+            transition-duration: 0.5s;
+
+            &:hover{
+                transform: scale(1.5);
+                transition-duration: 0.5s;
+            }
+
+            
+        }
+        
     }
+
 }
 
 
@@ -70,112 +99,16 @@ body{
     font-family: serif;
     }
     p{
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
+        @include font_texto;
         line-height: 1.5;
         text-align: left;
     }
     .image2 img{
         width: 600px;
         height: 400px;
+        box-shadow: 10px 10px 5px;
     }
 }
-
-
-/* .recomendaciones {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    h1{
-        font-size: 35px;
-        font-family: serif;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: underline;
-    }
-} */
-
-/* .table {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://i.pinimg.com/originals/fa/d9/8e/fad98e93aa014d8d8447bdf326c88f3e.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    
-} */
-
-/* .playlist {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    color: rgb(50, 50, 97);
-}
-
-
-.spotify {
-    display: flex;
-    flex-direction: column;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 30px;
-} */
-
-
-/* .recipes h1{
-    font-size: 35px;
-    font-family: serif;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-    h3{
-        font-size: 25px;
-        font-family: serif;
-        font-weight: normal;
-        text-align: left; 
-        text-decoration: underline;
-    }
-}
- */
-
-
-/* .contact{
-    list-style-type:circle;
-    font-size: 20px;
-    text-align: left;
-    font-style:normal;
-    font-family: serif;
-    line-height: 1.8;
-    padding-bottom: 30px;
-    h1{
-        font-size: 35px;
-        font-family: serif;
-        font-weight: bold;
-        text-align: center;
-        
-        text-decoration: underline;
-    }
-}
- */
-/* .info h2{
-    font-size: 35px;
-    font-family: serif;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    p{
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: rgb(252, 252, 252);
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-} */
-
-
 
 .enlaces {
     text-decoration: underline;
@@ -193,8 +126,60 @@ body{
     }
 }
 
-@import "contacto";
-@import "acercade";
-@import "playlist";
-@import "recetas";
-@import "recomendaciones";
+.recipes{
+    h1{
+    @include font_titulos;
+    }
+
+    h3{
+    @include font_texto;
+    }
+}
+
+
+.playlist {
+    @include font_texto;
+}
+
+
+.spotify {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.info{
+
+    h1{
+    @include font_titulos;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    p{
+        @include font_texto;
+        background-color: rgb(252, 252, 252);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .texto1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.contact{
+    h1{
+        @include font_titulos;
+    }
+    
+    h2{
+    @include font_texto;
+    line-height: 1.8;
+    padding-bottom: 30px;
+    }
+}
