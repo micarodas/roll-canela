@@ -1,0 +1,25 @@
+{
+  "name": "preentregarodas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "sass --watch scss/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micarodas/roll-canela.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micarodas/roll-canela/issues"
+  },
+  "homepage": "https://github.com/micarodas/roll-canela#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sass": "^1.56.0"
+  }
+}
