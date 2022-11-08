@@ -14,7 +14,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(234, 242, 245);
+    background-color: $colorbg;
 }
 
 
@@ -37,12 +37,15 @@ body{
 
 
 
-.contenido1 h2{
+.contenido1 {
+
+    h2{
     text-align: left;
     text-decoration: underline;
     font-size: 40px;
     font-weight: 50;
     font-family: serif;
+    }
     p{
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
@@ -50,15 +53,22 @@ body{
         line-height: 1.5;
         text-align: left;
     }
+    .image1 img{
+        width: 600px;
+        height: 400px;
+    }
 }
 
 
-.contenido2 h3{
+.contenido2 {
+
+    h3{
     text-align: left;
     text-decoration: underline;
     font-size: 40px;
     font-weight: 50;
     font-family: serif;
+    }
     p{
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
@@ -66,18 +76,12 @@ body{
         line-height: 1.5;
         text-align: left;
     }
+    .image2 img{
+        width: 600px;
+        height: 400px;
+    }
 }
 
-.image1 {
-    width: 600px;
-    height: 400px;
-}
-
-
-.image2 {
-    width: 600px;
-    height: 400px;
-}
 
 /* .recomendaciones {
     font-size: 20px;
