@@ -1,20 +1,30 @@
 
 $colorbg: rgb(201, 222, 230);
+$colorbgbtn: rgb(168, 124, 57);
 
 
 @mixin font_texto {
     color: black;
     font-size: 20px;
-    font-family: 'roboto' sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @mixin font_titulos {
-    font-size: 30px;
-    font-family: serif;
-    font-weight: bold;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:lighter;
     text-align: center;
-    text-decoration: underline;
 }
+
+@mixin font_text_ {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(25, 30, 41);
+    padding-left: 15px;
+}
+
+
 
 html {
     font-size: 62,5%;
@@ -39,28 +49,33 @@ body{
     background-image: url(https://food-images.files.bbci.co.uk/food/recipes/cinnamon_rolls_38056_16x9.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
-    padding-bottom: 500px;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .navbar-brand{
-    font-size: 35px;
+    font-size: 32px;
+    font-variant: small-caps;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .navbar li a:hover {
     color: rgb(125, 162, 219)
 }
 
+.btn-success{
+    background-color: $colorbgbtn;
+}
+.btn-primary{
+    background-color: $colorbgbtn;
+
+}
 
 
-.contenido1 {
+.contenido {
 
     h2{
-    text-align: left;
-    text-decoration: underline;
-    font-size: 40px;
-    font-weight: 50;
-    font-family: serif;
+    @include font_titulos;
     }
 
     p{
@@ -68,47 +83,16 @@ body{
         line-height: 1.5;
         text-align: left;
     }
-
-    .image1 {
-        
-
-        img{
-            transition-property: transform;
-            transition-duration: 0.5s;
-
-            &:hover{
-                transform: scale(1.5);
-                transition-duration: 0.5s;
-            }
-
-            
-        }
-        
+    
+    .image img{
+        width: 500px;
+        height: 300px;
     }
-
-}
-
-
-.contenido2 {
-
-    h3{
-    text-align: left;
-    text-decoration: underline;
-    font-size: 40px;
-    font-weight: 50;
-    font-family: serif;
-    }
-    p{
-        @include font_texto;
-        line-height: 1.5;
-        text-align: left;
-    }
-    .image2 img{
-        width: 600px;
-        height: 400px;
-        box-shadow: 10px 10px 5px;
+    span{
+        font-weight: bold;
     }
 }
+
 
 .enlaces {
     text-decoration: underline;
@@ -127,48 +111,140 @@ body{
 }
 
 .recipes{
+    
     h1{
     @include font_titulos;
     }
-
     h3{
-    @include font_texto;
+    @include font_text_;
+    }
+    li{
+    @include font_text_;
+    }
+    p{
+    @include font_text_ ;
+    }
+    img{
+        object-fit: cover;
     }
 }
 
+.recomendaciones{
+    p{
+        @include font_text_;
 
-.playlist {
-    @include font_texto;
+    }
+    h1{
+        @include font_titulos;
+    }
 }
 
+.recomendaciones p{
+    transition: all .4s;
+    
+    &:hover{
+        transform: scale(1.1)
+    }
+}
 
-.spotify {
-    display: flex;
-    flex-direction: column;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 30px;
+.table {
+    background-image: url(https://i.pinimg.com/originals/fa/d9/8e/fad98e93aa014d8d8447bdf326c88f3e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    th{
+        @include font_texto;
+    }
+    td{
+        @include font_texto;
+    }
+}
+
+.gallery img{
+    transition: .3s ;
+
+    &:hover{
+        transform:scale(1.1);
+    }
+}
+
+.gallery{
+    img{
+        width: 100%;
+        height: 390px;
+        object-fit: cover;
+    }
+}
+
+.d-inline-flex div{
+    transition: all .3s;
+    
+    &:hover{
+        transform: scale(1.2)
+    }
+}
+
+.playlist {
+    p{
+        @include font_text_;
+    }
+    h1{
+        @include font_titulos;
+    }
+}
+
+.playlist p{
+    transition: all .4s;
+
+    &:hover{
+        transform: scale(1.1)
+    }
 }
 
 .info{
 
     h1{
     @include font_titulos;
-    margin-top: 20px;
-    margin-bottom: 20px;
     }
     p{
-        @include font_texto;
-        background-color: rgb(252, 252, 252);
-        margin-left: 30px;
-        margin-right: 30px;
+        @include font_text_;
     }
-    .texto1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 50px;
+        grid-gap: 10px;
+    }
+    .gallery-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .gallery-item:nth-child(2) {
+        grid-column-start: span 2;
+    }
+    .gallery-item:nth-child(4) {
+        grid-row-start: span 2;
+    }
+    .gallery-item:nth-child(9) {
+        grid-column-start: span 2;
+    }
+    .gallery-item:nth-child(6) {
+        grid-column-start: span 2;
+    }
+    .gallery-item:nth-child(7) {
+        grid-column-start: span 2;
+    }
+    .gallery-item:nth-child(10) {
+        grid-column-start: span 2;
+    }
+}
+
+.info p{
+    transition: all .4s;
+    
+    &:hover{
+        transform: scale(1.1)
     }
 }
 
@@ -179,7 +255,5 @@ body{
     
     h2{
     @include font_texto;
-    line-height: 1.8;
-    padding-bottom: 30px;
     }
 }
