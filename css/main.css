@@ -123,13 +123,6 @@ body {
   text-align: center;
 }
 
-.recomendaciones p {
-  transition: all 0.4s;
-}
-.recomendaciones p:hover {
-  transform: scale(1.1);
-}
-
 .table {
   background-image: url(https://i.pinimg.com/originals/fa/d9/8e/fad98e93aa014d8d8447bdf326c88f3e.jpg);
   background-repeat: no-repeat;
@@ -228,13 +221,6 @@ body {
 }
 .info .gallery-item:nth-child(10) {
   grid-column-start: span 2;
-}
-
-.info p {
-  transition: all 0.4s;
-}
-.info p:hover {
-  transform: scale(1.1);
 }
 
 .contact h1 {
